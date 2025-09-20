@@ -1,0 +1,32 @@
+/*main page*/
+@font-face {
+    font-family:"Minecraft.ttf";
+    src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+
+body.main-page {
+    background-color:black;
+    color: white;
+    font-family:"Minecraft";
+}
+
+.special-text {
+    color:rgb(116, 255, 236);
+    font-size: 30px;
+}
+
+.rotate {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+/*music player*/
+body.musicplayer-page {
+    background-color:rgb(56, 56, 56);
+    color:white;
+    font-family:"Minecraft";
+    font-size: 20px;
+}
