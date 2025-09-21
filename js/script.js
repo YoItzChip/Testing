@@ -1,21 +1,38 @@
-const audio = new Audio('audios/soul[epicified].wav'); 
+//main
 const image = document.getElementById('cheb-image');
+if (image) {
+    const clickaudio = new Audio('../audios/soul[epicified].wav'); 
+    let clicked = false;
 
-let clicked = false
+    image.addEventListener('click', () => {
+        if (clicked) {
+            clickaudio.pause();
+            clickaudio.currentTime = 0;
+            image.classList.remove('rotate');
+        } else {
+            clickaudio.play();
+            image.classList.add('rotate');
+        }
+        clicked = !clicked;
+    });
 
-image.addEventListener('click', () => {
-    if (clicked) {
-        audio.currentTime = 0
-        audio.pause();
+    clickaudio.addEventListener('ended', () => {
+        clicked = false;
         image.classList.remove('rotate');
-    } else {
-        audio.currentTime = 0
-        audio.play();
-        image.classList.add('rotate');
-    }
-    clicked = !clicked
-});
-audio.addEventListener('ended', () =>{
-    clicked = false
-    image.classList.remove('rotate');
-});
+    });
+}
+
+//musicplayer
+const music = document.getElementById("myAudio");
+const playbutton = document.getElementById("playButton");
+const pausebutton = document.getElementById("pauseButton");
+
+if (music && playbutton && pausebutton) {
+    playbutton.addEventListener('click', () => {
+        music.play().catch(err => console.log("Audio failed to play:", err));
+    });
+
+    pausebutton.addEventListener('click', () => {
+        music.pause();
+    });
+}
