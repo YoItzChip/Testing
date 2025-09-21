@@ -1,0 +1,24 @@
+/*main page*/
+@font-face {
+    font-family:"Minecraft.ttf";
+    src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+
+body {
+    background-color:black;
+    color: white;
+    font-family:"Minecraft";
+}
+
+.special-text {
+    color:rgb(116, 255, 236);
+    font-size: 30px;
+}
+
+a {
+    color:lightblue;
+}
+
+a:hover {
+    color:white;
+}
