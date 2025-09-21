@@ -24,6 +24,9 @@ let clicked = false
 function secret() {
     if (!clicked) {
         victorysfx.play()
+        music.pause()
+        musicPlayerHead.innerText = "Paused"
+        togglebutton.innerText = "▶"
         text1.innerText = "congrats.. you uh.. you get a possum"
         catpng.src = "../images/littlePossumGuy.jpg"
     }
