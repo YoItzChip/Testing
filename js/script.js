@@ -1,7 +1,7 @@
 //main
 const image = document.getElementById('cheb-image');
 if (image) {
-    const clickaudio = new Audio('../audios/soul[epicified].mp3'); 
+    const clickaudio = new Audio('audios/soul[epicified].mp3'); 
     let clicked = false;
 
     image.addEventListener('click', () => {
