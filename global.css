@@ -9,7 +9,9 @@ body {
     color: white;
     font-family:"Minecraft";
 }
-
+.bordered {
+    border: 3px solid black;
+}
 .special-text {
     color:rgb(116, 255, 236);
     font-size: 30px;
