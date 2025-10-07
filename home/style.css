@@ -1,5 +1,10 @@
 .body {
-    background-color: black;
+    font-size: 300px;
+}
+
+.special-text {
+    color:rgb(116, 255, 236);
+    font-size: 30px;
 }
 
 
