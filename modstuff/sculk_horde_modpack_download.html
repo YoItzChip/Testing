@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>download</title>
+        <style>
+        body {
+            background-color: rgb(65, 65, 65);
+        }
+    </style>
+</head>
+<body>
+
+<script>
+window.onload = function () {
+    const a = document.createElement("a");
+    a.href = "sculk_horde.mrpack";
+    a.download = "sculk-horde-modpack.mrpack";
+
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+};
+</script>
+
+</body>
+</html>
